@@ -1,13 +1,13 @@
-package edu.uniceub.trabalhoa2.projetos;
+package br.edu.ceub.controleprojetos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProjetosApplication {
+public class Principal {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProjetosApplication.class, args);
+		SpringApplication.run(Principal.class, args);
 	}
 
 }

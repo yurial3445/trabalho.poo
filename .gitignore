@@ -1,0 +1,41 @@
+# MAVEN
+target/
+/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Maven Wrapper
+.mvn/wrapper/*
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse / STS
+.project
+.classpath
+.factorypath
+.settings/
+.apt_generated/
+.springBeans/
+.sts4-cache/
+
+# VS Code
+.vscode/
+
+# Arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+*.swm
+
+# SO
+.DS_Store
+Thumbs.db

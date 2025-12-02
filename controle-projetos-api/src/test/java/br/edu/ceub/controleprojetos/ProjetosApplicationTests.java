@@ -1,4 +1,4 @@
-package edu.uniceub.trabalhoa2.projetos;
+package br.edu.ceub.controleprojetos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

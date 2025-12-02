@@ -1,6 +1,4 @@
-package edu.uniceub.trabalhoa2.projetos;
-
-
+package br.edu.ceub.controleprojetos;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,8 +14,7 @@ public class Responsavel {
 		private String nome;
 		private String email;
 		private String telefone;
-		
-		
+
 		public Long getId() {
 			return id;
 		}

@@ -1,4 +1,4 @@
-package edu.uniceub.trabalhoa2.projetos;
+package br.edu.ceub.controleprojetos;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

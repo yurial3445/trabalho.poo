@@ -1,0 +1,106 @@
+# API Tests (IntelliJ HTTP Client)
+# Salve como: api-tests.http
+
+### RESPONSAVEIS
+### Listar
+GET http://localhost:8080/api/responsaveis
+
+###
+POST http://localhost:8080/api/responsaveis
+Content-Type: application/json
+
+{
+  "nome": "João Silva",
+  "email": "joao@gmail.com",
+  "telefone": "61999999999"
+}
+
+###
+POST http://localhost:8080/api/responsaveis
+Content-Type: application/json
+
+{
+  "nome": "Maria Oliveira",
+  "email": "maria@gmail.com",
+  "telefone": "61911111111"
+}
+
+###
+GET http://localhost:8080/api/responsaveis/1
+
+###
+PUT http://localhost:8080/api/responsaveis/1
+Content-Type: application/json
+
+{
+  "nome": "João Silva Atualizado",
+  "email": "joao.atualizado@gmail.com",
+  "telefone": "61977777777"
+}
+
+###
+DELETE http://localhost:8080/api/responsaveis/3
+
+
+### PROJETOS
+### Listar
+GET http://localhost:8080/api/projetos
+
+###
+POST http://localhost:8080/api/projetos
+Content-Type: application/json
+
+{
+  "nome": "Sistema de Gestão",
+  "descricao": "Projeto principal da disciplina",
+  "responsavel": { "id": 1 }
+}
+
+###
+GET http://localhost:8080/api/projetos/1
+
+###
+PUT http://localhost:8080/api/projetos/1
+Content-Type: application/json
+
+{
+  "nome": "Sistema de Gestão - Versão 2",
+  "descricao": "Atualização do projeto",
+  "responsavel": { "id": 2 }
+}
+
+###
+DELETE http://localhost:8080/api/projetos/1
+
+
+### TAREFAS
+### Listar
+GET http://localhost:8080/api/tarefas
+
+###
+POST http://localhost:8080/api/tarefas
+Content-Type: application/json
+
+{
+  "titulo": "Implementar endpoint POST",
+  "descricao": "Tarefa de criação via API",
+  "status": "pendente",
+  "projeto": { "id": 1 }
+}
+
+###
+GET http://localhost:8080/api/tarefas/1
+
+###
+PUT http://localhost:8080/api/tarefas/1
+Content-Type: application/json
+
+{
+  "titulo": "Implementar PUT",
+  "descricao": "Atualizado pela API",
+  "status": "concluida",
+  "projeto": { "id": 1 }
+}
+
+###
+DELETE http://localhost:8080/api/tarefas/1
